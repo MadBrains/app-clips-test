@@ -25,10 +25,3 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func sceneDidEnterBackground(_ scene: UIScene) { }
 }
-
-
-{
-    "appclips": {
-        "apps": ["DJEQWEOS.madbrains.MyApp.Clip"]
-    }
-}
