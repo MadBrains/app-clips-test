@@ -43,6 +43,7 @@ class ProductViewController: UIViewController {
         priceLabel.text = product.price.clean + " ₽"
         #else
         priceLabel.text = product.price.clean + " $"
+        fullAppButton.isHidden = true
         #endif
         
         orderButton.addTarget(self,
