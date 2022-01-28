@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductViewController" customModule="MyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="rGY-bD-Zga" id="Mjy-YZ-Xc6"/>
+                <outlet property="fullAppButton" destination="Iaq-hC-Lg0" id="5Zi-2t-ZVL"/>
+                <outlet property="orderButton" destination="kT7-bN-7wj" id="s6q-0m-NdI"/>
+                <outlet property="previewImageView" destination="gQm-k1-mQh" id="ihF-Kf-LiB"/>
+                <outlet property="priceLabel" destination="yeZ-Cd-anS" id="xAY-zn-8uu"/>
+                <outlet property="titleLabel" destination="OOV-q5-HrE" id="6eB-eg-YIH"/>
+                <outlet property="view" destination="LUi-mt-Qvd" id="NwY-Qe-8tr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LUi-mt-Qvd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kT7-bN-7wj">
+                    <rect key="frame" x="16" y="750" width="382" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Te3-7f-GW7"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Заказать"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGY-bD-Zga">
+                    <rect key="frame" x="16" y="353" width="382" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOV-q5-HrE">
+                    <rect key="frame" x="16" y="316" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQm-k1-mQh">
+                    <rect key="frame" x="16" y="60" width="382" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="SRt-iO-lLK"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9999.99 $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeZ-Cd-anS">
+                    <rect key="frame" x="16" y="713" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iaq-hC-Lg0">
+                    <rect key="frame" x="0.0" y="806" width="414" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="q7x-cv-1wC"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Скачать полное приложение"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="xFW-eO-MXA"/>
+            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="OOV-q5-HrE" firstAttribute="top" secondItem="gQm-k1-mQh" secondAttribute="bottom" constant="16" id="11O-GW-r0X"/>
+                <constraint firstItem="gQm-k1-mQh" firstAttribute="top" secondItem="xFW-eO-MXA" secondAttribute="top" constant="16" id="6dh-I2-rta"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="OOV-q5-HrE" secondAttribute="trailing" constant="16" id="7CL-Tz-dL4"/>
+                <constraint firstItem="kT7-bN-7wj" firstAttribute="top" secondItem="yeZ-Cd-anS" secondAttribute="bottom" constant="16" id="8oz-TY-K3g"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="Iaq-hC-Lg0" secondAttribute="trailing" id="CKM-QV-foa"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="rGY-bD-Zga" secondAttribute="trailing" constant="16" id="EKd-gb-DsA"/>
+                <constraint firstItem="rGY-bD-Zga" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" constant="16" id="KfT-5l-nfd"/>
+                <constraint firstItem="gQm-k1-mQh" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" constant="16" id="Ty9-Bl-Qet"/>
+                <constraint firstItem="Iaq-hC-Lg0" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" id="WWl-0y-4ha"/>
+                <constraint firstItem="OOV-q5-HrE" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" constant="16" id="bQO-yR-5Th"/>
+                <constraint firstItem="Iaq-hC-Lg0" firstAttribute="top" secondItem="kT7-bN-7wj" secondAttribute="bottom" constant="16" id="bl5-eO-gdI"/>
+                <constraint firstItem="yeZ-Cd-anS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rGY-bD-Zga" secondAttribute="bottom" constant="8" id="cbu-0m-M9S"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="yeZ-Cd-anS" secondAttribute="trailing" constant="16" id="f2T-Hu-fNC"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="bottom" secondItem="Iaq-hC-Lg0" secondAttribute="bottom" constant="16" id="gfd-Ef-wf7"/>
+                <constraint firstItem="rGY-bD-Zga" firstAttribute="top" secondItem="OOV-q5-HrE" secondAttribute="bottom" constant="16" id="hBr-RI-flR"/>
+                <constraint firstItem="yeZ-Cd-anS" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" constant="16" id="hI7-yn-KE2"/>
+                <constraint firstItem="kT7-bN-7wj" firstAttribute="leading" secondItem="xFW-eO-MXA" secondAttribute="leading" constant="16" id="myF-EN-3I0"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="gQm-k1-mQh" secondAttribute="trailing" constant="16" id="qOH-Pc-ZT1"/>
+                <constraint firstItem="xFW-eO-MXA" firstAttribute="trailing" secondItem="kT7-bN-7wj" secondAttribute="trailing" constant="16" id="wis-Ho-J7U"/>
+            </constraints>
+            <point key="canvasLocation" x="2493" y="-587"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ywW-KT-zIs">
+                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="hB6-Nh-5lk"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RMm-da-Pad">
+                                <rect key="frame" x="0.0" y="269" width="414" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="DAt-oN-2dv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.45098039220000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzZ-QJ-z9a" userLabel="COFFEE">
+                                <rect key="frame" x="0.0" y="568" width="414" height="294"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="48"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gzZ-QJ-z9a" firstAttribute="top" secondItem="ywW-KT-zIs" secondAttribute="bottom" id="40s-5Q-Plo"/>
+                            <constraint firstItem="RMm-da-Pad" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fcv-WC-2aw"/>
+                            <constraint firstItem="ywW-KT-zIs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LoN-s5-GZF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gzZ-QJ-z9a" secondAttribute="bottom" id="T5l-Ka-vjb"/>
+                            <constraint firstItem="ywW-KT-zIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="adn-v7-e11"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RMm-da-Pad" secondAttribute="trailing" id="bOs-KR-XxH"/>
+                            <constraint firstItem="gzZ-QJ-z9a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="br1-8z-HMO"/>
+                            <constraint firstItem="ywW-KT-zIs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fqf-ty-iYF"/>
+                            <constraint firstItem="ywW-KT-zIs" firstAttribute="top" secondItem="RMm-da-Pad" secondAttribute="bottom" id="nxw-4v-SVr"/>
+                            <constraint firstItem="gzZ-QJ-z9a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qZ0-tt-crF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee-logo" width="800" height="800"/>
+    </resources>
+</document>

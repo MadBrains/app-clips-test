@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RmU-8a-ClY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="y90-wj-EEw">
+            <objects>
+                <viewController id="RmU-8a-ClY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1In-lh-XjX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee-logo" translatesAutoresizingMaskIntoConstraints="NO" id="SKA-Ae-ks5">
+                                <rect key="frame" x="0.0" y="328" width="414" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="fAe-HS-h2E"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Oh-xm-TsT">
+                                <rect key="frame" x="0.0" y="269" width="414" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="gsl-q9-gBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="48"/>
+                                <color key="textColor" red="1" green="0.45098039220000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3z7-Vc-rRR" userLabel="COFFEE">
+                                <rect key="frame" x="0.0" y="568" width="414" height="294"/>
+                                <fontDescription key="fontDescription" name="Charter-Bold" family="Charter" pointSize="48"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="o1A-03-fuT"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Oh-xm-TsT" firstAttribute="leading" secondItem="o1A-03-fuT" secondAttribute="leading" id="Ebt-1B-MMm"/>
+                            <constraint firstItem="SKA-Ae-ks5" firstAttribute="top" secondItem="8Oh-xm-TsT" secondAttribute="bottom" id="IAf-5g-Xxm"/>
+                            <constraint firstItem="3z7-Vc-rRR" firstAttribute="top" secondItem="SKA-Ae-ks5" secondAttribute="bottom" id="LhH-WH-d0e"/>
+                            <constraint firstItem="3z7-Vc-rRR" firstAttribute="trailing" secondItem="o1A-03-fuT" secondAttribute="trailing" id="Scb-Fh-HKQ"/>
+                            <constraint firstItem="3z7-Vc-rRR" firstAttribute="leading" secondItem="o1A-03-fuT" secondAttribute="leading" id="Xkg-YS-gFT"/>
+                            <constraint firstItem="SKA-Ae-ks5" firstAttribute="trailing" secondItem="o1A-03-fuT" secondAttribute="trailing" id="YwQ-ur-xqJ"/>
+                            <constraint firstItem="o1A-03-fuT" firstAttribute="trailing" secondItem="8Oh-xm-TsT" secondAttribute="trailing" id="cWG-6h-f4Q"/>
+                            <constraint firstItem="o1A-03-fuT" firstAttribute="bottom" secondItem="3z7-Vc-rRR" secondAttribute="bottom" id="l5p-Jo-xH6"/>
+                            <constraint firstItem="SKA-Ae-ks5" firstAttribute="leading" secondItem="o1A-03-fuT" secondAttribute="leading" id="lB3-Qq-X1k"/>
+                            <constraint firstItem="SKA-Ae-ks5" firstAttribute="centerY" secondItem="1In-lh-XjX" secondAttribute="centerY" id="qlS-I7-4gD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXb-TL-BQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="coffee-logo" width="800" height="800"/>
+    </resources>
+</document>
